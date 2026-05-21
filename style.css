@@ -558,6 +558,9 @@ body {
 }
 
 .hero-institution {
+  display: flex;
+  align-items: center;
+  gap: 14px;
   font-family: var(--font-mono);
   font-size: .75rem;
   letter-spacing: .15em;
@@ -566,6 +569,15 @@ body {
   margin-bottom: 20px;
   opacity: 0;
   animation: fadeInUp .9s .65s forwards;
+}
+.hero-institution-logo {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+  background: rgba(255,255,255,0.93);
+  border-radius: 6px;
+  padding: 4px 8px;
+  flex-shrink: 0;
 }
 
 .hero-domains {
