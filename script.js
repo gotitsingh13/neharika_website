@@ -351,14 +351,21 @@ class MobileNav {
   constructor() {
     this.toggle = document.getElementById('nav-toggle');
     this.links  = document.getElementById('nav-links');
+    this.closeBtn = document.getElementById('nav-close');
     if (!this.toggle || !this.links) return;
 
     this.open = false;
     this.toggle.addEventListener('click', () => this._toggle());
+    if (this.closeBtn) this.closeBtn.addEventListener('click', () => this._close());
 
     // Close on link click
     this.links.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => this._close());
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && this.open) this._close();
     });
   }
 

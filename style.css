@@ -270,6 +270,25 @@ body {
   }
   .nav-links.open { transform: translateX(0); }
   .nav-link { font-size: 1rem; }
+  .nav-close {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    background: none;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 8px;
+    color: var(--text-secondary);
+    font-size: 1.6rem;
+    line-height: 1;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color var(--transition-mid), border-color var(--transition-mid);
+  }
+  .nav-close:hover { color: var(--text-primary); border-color: var(--gold-dim); }
 }
 
 /* === HELPERS ======================================================= */
