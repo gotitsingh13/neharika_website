@@ -30,6 +30,19 @@
     <span class="loader-text">Loading</span>
   </div>
 
+  <!-- ─── FLOATING SECTION NAVIGATOR ─────────────────────────── -->
+  <nav class="float-nav" id="float-nav" aria-label="Section navigator">
+    <a href="#hero"           class="fn-dot" data-label="Home"></a>
+    <a href="#vision"         class="fn-dot" data-label="Vision"></a>
+    <a href="#research"       class="fn-dot" data-label="Research"></a>
+    <a href="#scientific-work" class="fn-dot" data-label="Scientific Work"></a>
+    <a href="#journey"        class="fn-dot" data-label="Journey"></a>
+    <a href="#leadership"     class="fn-dot" data-label="Leadership"></a>
+    <a href="#mentorship"     class="fn-dot" data-label="Mentorship"></a>
+    <a href="#community"      class="fn-dot" data-label="Community"></a>
+    <a href="#collaborate"    class="fn-dot" data-label="Collaborate"></a>
+  </nav>
+
   <!-- ─── NAVIGATION ─────────────────────────────────────────── -->
   <nav id="navbar">
     <div class="nav-container">
@@ -39,10 +52,10 @@
       </a>
       <div class="nav-links" id="nav-links">
         <a href="#research" class="nav-link">Research</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#publications" class="nav-link">Publications</a>
-        <a href="#timeline" class="nav-link">Journey</a>
+        <a href="#scientific-work" class="nav-link">Work</a>
+        <a href="#journey" class="nav-link">Journey</a>
         <a href="#leadership" class="nav-link">Leadership</a>
+        <a href="#mentorship" class="nav-link">Mentorship</a>
         <a href="#collaborate" class="nav-link nav-cta">Collaborate</a>
       </div>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
@@ -66,16 +79,19 @@
         <span class="hero-first">Dr. Neharika</span>
         <span class="hero-last">Bhadouria</span>
       </h1>
+      <p class="hero-institution">
+        Postdoctoral Fellow &nbsp;·&nbsp; Icahn School of Medicine at Mount Sinai, New York
+      </p>
       <p class="hero-tagline">
-        Advancing mechanism-based, non-opioid therapeutics<br />
-        for chronic back pain and intervertebral disc degeneration
+        Advancing mechanism-based, non-opioid therapeutics for spine degeneration<br />
+        through the biology of SerpinA1, estrogen signaling, and bone–disc crosstalk
       </p>
       <div class="hero-domains">
         <span class="domain-tag">Orthopaedics</span>
         <span class="domain-sep">·</span>
-        <span class="domain-tag">Neuroscience</span>
+        <span class="domain-tag">Spine Biomechanics</span>
         <span class="domain-sep">·</span>
-        <span class="domain-tag">Biomechanics</span>
+        <span class="domain-tag">Bone Biology</span>
         <span class="domain-sep">·</span>
         <span class="domain-tag">Regenerative Medicine</span>
       </div>
@@ -178,24 +194,24 @@
 
       <div class="stats-grid reveal">
         <div class="stat-card">
-          <div class="stat-num" data-target="15">0</div>
-          <div class="stat-label">Publications &amp; Presentations</div>
-          <div class="stat-track"><div class="stat-fill" data-pct="75"></div></div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num" data-target="4">0</div>
-          <div class="stat-label">Active Research Projects</div>
-          <div class="stat-track"><div class="stat-fill" data-pct="60"></div></div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num" data-target="6">0</div>
-          <div class="stat-label">Research Domains</div>
-          <div class="stat-track"><div class="stat-fill" data-pct="80"></div></div>
+          <div class="stat-num" data-target="7">0</div>
+          <div class="stat-label">Peer-Reviewed Publications</div>
+          <div class="stat-track"><div class="stat-fill" data-pct="70"></div></div>
         </div>
         <div class="stat-card">
           <div class="stat-num" data-target="20">0</div>
-          <div class="stat-label">Students Mentored</div>
-          <div class="stat-track"><div class="stat-fill" data-pct="55"></div></div>
+          <div class="stat-label">Conference Presentations</div>
+          <div class="stat-track"><div class="stat-fill" data-pct="85"></div></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-target="8">0</div>
+          <div class="stat-label">Awards &amp; Fellowships</div>
+          <div class="stat-track"><div class="stat-fill" data-pct="80"></div></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-target="11">0</div>
+          <div class="stat-label">Trainees Mentored</div>
+          <div class="stat-track"><div class="stat-fill" data-pct="65"></div></div>
         </div>
       </div>
     </div>
@@ -221,11 +237,18 @@
             <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="19" stroke="#C9A84C" stroke-width="1.3" opacity=".4"/><path d="M12 24 Q18 15 24 24 Q30 33 36 24" stroke="#C9A84C" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="24" cy="24" r="3.5" fill="#C9A84C" opacity=".7"/><circle cx="12" cy="24" r="2" fill="#C9A84C" opacity=".4"/><circle cx="36" cy="24" r="2" fill="#C9A84C" opacity=".4"/></svg>
           </div>
           <h3 class="rc-title">Translational Spine Research</h3>
-          <p class="rc-desc">Bridging bench discoveries to clinical applications in spine degeneration, developing biologically relevant models that mirror human lumbar pathology.</p>
-          <div class="rc-tags">
-            <span class="tag">Bench-to-Bedside</span>
-            <span class="tag">Preclinical Models</span>
+          <p class="rc-summary">Bridging bench discoveries to clinical applications — biologically relevant models that mirror human lumbar pathology.</p>
+          <div class="rc-tags"><span class="tag">Bench-to-Bedside</span><span class="tag">Preclinical Models</span></div>
+          <div class="rc-detail">
+            <p class="rc-full-desc">Bridging bench discoveries to clinical applications in spine degeneration, developing biologically relevant models that mirror human lumbar pathology. This platform forms the foundation for evaluating bone anti-resorptive drugs, estrogen signaling modulators, and inflammation-targeted therapies in physiologically accurate in vivo systems.</p>
+            <div class="rc-detail-methods">
+              <span class="rc-method-label">Methods</span>
+              <span class="rc-method">Murine lumbar disc models</span>
+              <span class="rc-method">Histomorphometry</span>
+              <span class="rc-method">Behavioral pain assays</span>
+            </div>
           </div>
+          <button class="rc-expand-btn" aria-expanded="false"><span class="rc-expand-label">Explore</span><span class="rc-expand-icon" aria-hidden="true">+</span></button>
         </div>
 
         <div class="research-card reveal" style="--delay:0.07s">
@@ -233,12 +256,19 @@
           <div class="rc-icon">
             <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="19" stroke="#00C9A7" stroke-width="1.3" opacity=".4"/><path d="M14 31 L18 17 L22 25 L26 12 L30 25 L34 31" stroke="#00C9A7" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <h3 class="rc-title">Discogenic Pain Mechanisms</h3>
-          <p class="rc-desc">Uncovering the molecular and cellular cascade through which IVD degeneration generates chronic low back pain, identifying actionable therapeutic targets.</p>
-          <div class="rc-tags">
-            <span class="tag">IVD Biology</span>
-            <span class="tag">Pain Signaling</span>
+          <h3 class="rc-title">Discogenic Pain &amp; IVD Degeneration</h3>
+          <p class="rc-summary">Molecular cascades linking SerpinA1, inflammatory mediators, and age- and sex-dependent pathways to chronic low back pain.</p>
+          <div class="rc-tags"><span class="tag">IVD Biology</span><span class="tag">SerpinA1</span></div>
+          <div class="rc-detail">
+            <p class="rc-full-desc">Uncovering the molecular cascade by which IVD degeneration generates chronic low back pain — with focus on SerpinA1/Alpha-1 antitrypsin, inflammatory mediators, and age- and sex-related degenerative pathways. Combining in vivo mouse models with tissue-level profiling to identify targetable mechanisms upstream of nociception.</p>
+            <div class="rc-detail-methods">
+              <span class="rc-method-label">Methods</span>
+              <span class="rc-method">qRT-PCR / Western Blot</span>
+              <span class="rc-method">Cytokine profiling</span>
+              <span class="rc-method">IHC / confocal imaging</span>
+            </div>
           </div>
+          <button class="rc-expand-btn" aria-expanded="false"><span class="rc-expand-label">Explore</span><span class="rc-expand-icon" aria-hidden="true">+</span></button>
         </div>
 
         <div class="research-card reveal" style="--delay:0.14s">
@@ -246,12 +276,19 @@
           <div class="rc-icon">
             <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="19" stroke="#4A8FD4" stroke-width="1.3" opacity=".4"/><circle cx="15" cy="19" r="4" stroke="#4A8FD4" stroke-width="1.4" fill="none"/><circle cx="33" cy="19" r="4" stroke="#4A8FD4" stroke-width="1.4" fill="none"/><circle cx="24" cy="33" r="4" stroke="#4A8FD4" stroke-width="1.4" fill="none"/><line x1="19" y1="21" x2="29" y2="21" stroke="#4A8FD4" stroke-width="1"/><line x1="17" y1="23" x2="22" y2="30" stroke="#4A8FD4" stroke-width="1"/><line x1="31" y1="23" x2="26" y2="30" stroke="#4A8FD4" stroke-width="1"/></svg>
           </div>
-          <h3 class="rc-title">Spinal Tissue &amp; Neural Crosstalk</h3>
-          <p class="rc-desc">Investigating bidirectional signaling between disc cells, bone cells, and sensory neurons that drive pain sensitization and tissue pathology.</p>
-          <div class="rc-tags">
-            <span class="tag">Cell Signaling</span>
-            <span class="tag">Neural Integration</span>
+          <h3 class="rc-title">Bone–Disc–Immune Crosstalk</h3>
+          <p class="rc-summary">Bidirectional signaling between vertebral bone, disc, and macrophages — osteoclastogenesis, Wnt/sclerostin, and endplate inflammation.</p>
+          <div class="rc-tags"><span class="tag">Bone–Disc Interface</span><span class="tag">Osteoclastogenesis</span></div>
+          <div class="rc-detail">
+            <p class="rc-full-desc">Investigating bidirectional signaling between vertebral bone, intervertebral disc, and macrophages — including osteoclastogenesis, Wnt/sclerostin signaling, and endplate-mediated inflammatory cascades that drive degeneration. The SerpinA1 global deletion model reveals how systemic protease-inhibitor deficiency disrupts immune homeostasis at the bone-disc interface.</p>
+            <div class="rc-detail-methods">
+              <span class="rc-method-label">Methods</span>
+              <span class="rc-method">Osteoclast differentiation assay</span>
+              <span class="rc-method">Sclerostin / DKK-1 inhibition</span>
+              <span class="rc-method">Macrophage recruitment assay</span>
+            </div>
           </div>
+          <button class="rc-expand-btn" aria-expanded="false"><span class="rc-expand-label">Explore</span><span class="rc-expand-icon" aria-hidden="true">+</span></button>
         </div>
 
         <div class="research-card reveal" style="--delay:0s">
@@ -259,12 +296,19 @@
           <div class="rc-icon">
             <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="19" stroke="#8B6BCE" stroke-width="1.3" opacity=".4"/><path d="M24 12 Q32 14 32 24 Q32 34 24 36 Q16 34 16 24 Q16 14 24 12 Z" stroke="#8B6BCE" stroke-width="1.4" fill="none"/><path d="M12 24 Q18 18 24 24 Q30 30 36 24" stroke="#8B6BCE" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg>
           </div>
-          <h3 class="rc-title">Sensory Nerve Remodeling</h3>
-          <p class="rc-desc">Characterizing pathological sensory nerve ingrowth into degenerated disc tissue and the aberrant pain pathways that contribute to chronic discogenic pain.</p>
-          <div class="rc-tags">
-            <span class="tag">Neuroplasticity</span>
-            <span class="tag">Nociceptive Innervation</span>
+          <h3 class="rc-title">Spine Biomechanics &amp; Structural Biology</h3>
+          <p class="rc-summary">Correlating mechanical properties, biological degeneration markers, and sex differences using micro-CT and biomechanical testing.</p>
+          <div class="rc-tags"><span class="tag">Micro-CT Testing</span><span class="tag">Biomechanics</span></div>
+          <div class="rc-detail">
+            <p class="rc-full-desc">Correlating mechanical and compositional properties of intervertebral discs — using novel micro-CT/mechanical testing approaches — with biological degeneration markers, sex differences, and therapeutic interventions such as raloxifene. This work links structural-level outcomes to molecular-level interventions across the full spine functional unit.</p>
+            <div class="rc-detail-methods">
+              <span class="rc-method-label">Methods</span>
+              <span class="rc-method">μCT scanning</span>
+              <span class="rc-method">Axial mechanical testing</span>
+              <span class="rc-method">Disc height index</span>
+            </div>
           </div>
+          <button class="rc-expand-btn" aria-expanded="false"><span class="rc-expand-label">Explore</span><span class="rc-expand-icon" aria-hidden="true">+</span></button>
         </div>
 
         <div class="research-card reveal" style="--delay:0.07s">
@@ -272,12 +316,19 @@
           <div class="rc-icon">
             <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="19" stroke="#00C9A7" stroke-width="1.3" opacity=".4"/><path d="M14 34 Q14 21 24 21 Q34 21 34 34" stroke="#00C9A7" stroke-width="1.8" fill="none" stroke-linecap="round"/><circle cx="24" cy="15" r="5.5" stroke="#00C9A7" stroke-width="1.4" fill="none"/><path d="M20 30 Q22 26 24 28 Q26 26 28 30" stroke="#00C9A7" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg>
           </div>
-          <h3 class="rc-title">Regenerative &amp; Therapeutic Innovation</h3>
-          <p class="rc-desc">Developing and evaluating non-opioid, biologically-based strategies targeting pain mechanisms and tissue restoration in degenerated intervertebral discs.</p>
-          <div class="rc-tags">
-            <span class="tag">Non-Opioid</span>
-            <span class="tag">Biologics</span>
+          <h3 class="rc-title">Bone Anti-Resorptive Therapeutics for IVD</h3>
+          <p class="rc-summary">Repurposing raloxifene as a non-surgical, non-opioid IVD intervention via estrogen receptor signaling.</p>
+          <div class="rc-tags"><span class="tag">Raloxifene</span><span class="tag">Estrogen Signaling</span></div>
+          <div class="rc-detail">
+            <p class="rc-full-desc">Repurposing existing bone therapeutics — particularly raloxifene — as non-surgical, non-opioid treatments for IVD degeneration and back pain. Investigating estrogen receptor signaling as a protective pathway against age- and sex-related disc deterioration. IV tail-vein delivery demonstrates systemic access to disc tissue with measurable improvement in disc mechanical properties.</p>
+            <div class="rc-detail-methods">
+              <span class="rc-method-label">Methods</span>
+              <span class="rc-method">IV tail-vein injection</span>
+              <span class="rc-method">Estrogen receptor agonism</span>
+              <span class="rc-method">Proteomics / pathway mapping</span>
+            </div>
           </div>
+          <button class="rc-expand-btn" aria-expanded="false"><span class="rc-expand-label">Explore</span><span class="rc-expand-icon" aria-hidden="true">+</span></button>
         </div>
 
         <div class="research-card reveal" style="--delay:0.14s">
@@ -286,242 +337,319 @@
             <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="19" stroke="#C9A84C" stroke-width="1.3" opacity=".4"/><circle cx="24" cy="17" r="6" stroke="#C9A84C" stroke-width="1.4" fill="none"/><path d="M15 37 Q15 28 24 28 Q33 28 33 37" stroke="#C9A84C" stroke-width="1.4" fill="none" stroke-linecap="round"/><path d="M13 21 Q9 24 9 31" stroke="#C9A84C" stroke-width="1" fill="none" opacity=".6"/><path d="M35 21 Q39 24 39 31" stroke="#C9A84C" stroke-width="1" fill="none" opacity=".6"/></svg>
           </div>
           <h3 class="rc-title">Scientific Leadership &amp; Mentorship</h3>
-          <p class="rc-desc">Cultivating the next generation of spine researchers through active mentorship, scientific community engagement, and collaborative bridge-building.</p>
-          <div class="rc-tags">
-            <span class="tag">STEM Mentorship</span>
-            <span class="tag">Academic Leadership</span>
+          <p class="rc-summary">Cultivating the next generation of spine researchers through active mentorship, community engagement, and global bridge-building.</p>
+          <div class="rc-tags"><span class="tag">STEM Mentorship</span><span class="tag">Academic Leadership</span></div>
+          <div class="rc-detail">
+            <p class="rc-full-desc">Cultivating the next generation of spine researchers through active mentorship, scientific community engagement, and collaborative bridge-building. Mentoring 11 trainees across 6 institutions and 4 countries; serving on ORS Innovation Committee 2023–25; organizing Innovation Track sessions; delivering invited lectures at medical schools and international festivals.</p>
+            <div class="rc-detail-methods">
+              <span class="rc-method-label">Engagements</span>
+              <span class="rc-method">ORS Innovation Committee 2023–25</span>
+              <span class="rc-method">Invited lectures (IUSM, IUPUI)</span>
+              <span class="rc-method">11 trainees across 4 countries</span>
+            </div>
           </div>
+          <button class="rc-expand-btn" aria-expanded="false"><span class="rc-expand-label">Explore</span><span class="rc-expand-icon" aria-hidden="true">+</span></button>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ─── ACTIVE PROJECTS ──────────────────────────────────────── -->
-  <section id="projects" class="section">
+  <!-- ─── SCIENTIFIC WORK ──────────────────────────────────────── -->
+  <section id="scientific-work" class="section">
     <div class="container">
       <header class="section-header reveal">
-        <span class="section-eyebrow">Ongoing Investigations</span>
-        <h2 class="section-title">Active Research Projects</h2>
-        <p class="section-sub">
-          Current experimental platforms advancing our understanding of discogenic pain
-          and translational non-opioid therapeutics
-        </p>
+        <span class="section-eyebrow">Investigations &amp; Outputs</span>
+        <h2 class="section-title">Scientific Work</h2>
+        <p class="section-sub">Active research projects, peer-reviewed publications, and conference contributions</p>
       </header>
 
-      <div class="projects-grid">
-
-        <div class="project-card reveal">
-          <div class="proj-header">
-            <span class="proj-id">PRJ — 01</span>
-            <span class="proj-badge">Active</span>
-          </div>
-          <h3 class="proj-title">Lumbar Disc Injury &amp; Degeneration Models</h3>
-          <p class="proj-desc">
-            Development and characterization of clinically relevant preclinical rodent models
-            of lumbar IVD degeneration, incorporating behavioral pain assessment,
-            histological analysis, and transcriptomic profiling.
-          </p>
-          <div class="proj-techniques">
-            <span class="technique">Needle Puncture Model</span>
-            <span class="technique">MRI Assessment</span>
-            <span class="technique">Von Frey Testing</span>
-            <span class="technique">Histology &amp; IHC</span>
-          </div>
-          <div class="proj-bar"></div>
+      <div class="sw-tabs reveal">
+        <div class="sw-tab-bar" role="tablist">
+          <button class="sw-tab active" role="tab" aria-selected="true" data-tab="projects">Research Projects</button>
+          <button class="sw-tab" role="tab" aria-selected="false" data-tab="publications">Publications</button>
+          <button class="sw-tab" role="tab" aria-selected="false" data-tab="presentations">Presentations</button>
         </div>
 
-        <div class="project-card reveal">
-          <div class="proj-header">
-            <span class="proj-id">PRJ — 02</span>
-            <span class="proj-badge">Active</span>
+        <!-- PROJECTS PANEL -->
+        <div class="sw-panel active" data-panel="projects" role="tabpanel">
+          <div class="projects-grid">
+
+            <div class="project-card">
+              <div class="proj-header">
+                <span class="proj-id">PRJ — 01</span>
+                <span class="proj-badge">Active · ISMMS</span>
+              </div>
+              <h3 class="proj-title">SerpinA1 / Alpha-1 Antitrypsin in Bone–IVD Crosstalk</h3>
+              <p class="proj-desc">
+                Investigating the emerging role of SerpinA1 (Alpha-1 antitrypsin) as a systemic
+                regulator of bone and IVD homeostasis. Global deletion models demonstrate impaired
+                macrophage recruitment to injured discs, enhanced osteoclastogenesis, and bone loss
+                that mirrors the skeletal phenotype of genetic emphysema — providing a unique
+                window into inflammation-driven disc degeneration.
+              </p>
+              <div class="proj-techniques">
+                <span class="technique">Mouse Knockout Models</span>
+                <span class="technique">Macrophage Recruitment Assay</span>
+                <span class="technique">Osteoclast Differentiation</span>
+                <span class="technique">Histomorphometry</span>
+              </div>
+              <div class="proj-bar"></div>
+            </div>
+
+            <div class="project-card">
+              <div class="proj-header">
+                <span class="proj-id">PRJ — 02</span>
+                <span class="proj-badge">Active · ISMMS</span>
+              </div>
+              <h3 class="proj-title">Raloxifene as a Non-Surgical IVD Therapy</h3>
+              <p class="proj-desc">
+                Demonstrating that the bone anti-resorptive drug raloxifene stimulates estrogen
+                receptor signaling to protect against age- and sex-related IVD degeneration in
+                mice. Intravenous short-term tail-vein injections are shown to enhance axial
+                mechanical stiffness of the disc, positioning raloxifene as a
+                promising non-opioid spine intervention.
+              </p>
+              <div class="proj-techniques">
+                <span class="technique">IV Tail-Vein Injection</span>
+                <span class="technique">Micro-CT / Mechanical Testing</span>
+                <span class="technique">Estrogen Receptor Signaling</span>
+                <span class="technique">Histology &amp; IHC</span>
+              </div>
+              <div class="proj-bar"></div>
+            </div>
+
+            <div class="project-card">
+              <div class="proj-header">
+                <span class="proj-id">PRJ — 03</span>
+                <span class="proj-badge">Active · ISMMS</span>
+              </div>
+              <h3 class="proj-title">Sex-Dependent SERPINA1 Expression &amp; Spinal Inflammation</h3>
+              <p class="proj-desc">
+                Characterizing sex-dependent differences in spinal SERPINA1 expression and their
+                capacity to predispose women to heightened spinal inflammation and accelerated
+                IVD degeneration — establishing a novel biological basis for the well-documented
+                but poorly understood sex disparity in chronic back pain prevalence.
+              </p>
+              <div class="proj-techniques">
+                <span class="technique">qRT-PCR / Western Blot</span>
+                <span class="technique">Sex-Stratified Tissue Analysis</span>
+                <span class="technique">Cytokine Profiling</span>
+                <span class="technique">Spinal Tissue Dissection</span>
+              </div>
+              <div class="proj-bar"></div>
+            </div>
+
+            <div class="project-card">
+              <div class="proj-header">
+                <span class="proj-id">PRJ — 04</span>
+                <span class="proj-badge">Collaboration</span>
+              </div>
+              <h3 class="proj-title">Lumbar Endplate Injury &amp; Spinal Cord Sensitization</h3>
+              <p class="proj-desc">
+                Collaborative investigation (Iatridis Lab, ISMMS) of a clinically relevant rat
+                model where lumbar endplate microfracture induces Modic-like changes, IVD
+                degeneration, and spinal cord sensitization — providing a translational
+                platform to study discogenic pain initiation and its central sequelae.
+              </p>
+              <div class="proj-techniques">
+                <span class="technique">Endplate Injury Model</span>
+                <span class="technique">MRI &amp; μCT</span>
+                <span class="technique">Spinal Cord Sensitization</span>
+                <span class="technique">Behavioral Pain Assessment</span>
+              </div>
+              <div class="proj-bar"></div>
+            </div>
+
           </div>
-          <h3 class="proj-title">TRPV1-Mediated Nociception in Disc Degeneration</h3>
-          <p class="proj-desc">
-            Investigating the role of TRPV1 channels in disc cell–nerve communication
-            and pain sensitization, identifying targeted antagonist strategies as a
-            non-opioid pain management approach.
-          </p>
-          <div class="proj-techniques">
-            <span class="technique">TRPV1 Immunostaining</span>
-            <span class="technique">qRT-PCR</span>
-            <span class="technique">Calcium Imaging</span>
-            <span class="technique">DRG Co-culture</span>
-          </div>
-          <div class="proj-bar"></div>
         </div>
 
-        <div class="project-card reveal">
-          <div class="proj-header">
-            <span class="proj-id">PRJ — 03</span>
-            <span class="proj-badge">Active</span>
+        <!-- PUBLICATIONS PANEL -->
+        <div class="sw-panel" data-panel="publications" role="tabpanel">
+          <div class="pubs-list">
+
+            <article class="pub-item">
+              <div class="pub-meta">
+                <span class="pub-journal">JBMR Plus</span>
+                <span class="pub-year">2024</span>
+                <span class="pub-type pub-type-primary">First Author</span>
+              </div>
+              <h3 class="pub-title">Osteoporosis Treatments for Intervertebral Disc Degeneration and Back Pain: A Perspective</h3>
+              <p class="pub-authors">Bhadouria N, Holguin N.</p>
+              <p class="pub-abstract">A clinical and mechanistic perspective on the repurposing of osteoporosis drugs — including bone anti-resorptives and anabolics — for the treatment of IVD degeneration, bridging bone biology with the unmet therapeutic need in chronic back pain. <em>[Accepted]</em></p>
+              <div class="pub-tags"><span class="tag">Osteoporosis Drugs</span><span class="tag">IVD Therapeutics</span><span class="tag">Non-Opioid</span></div>
+            </article>
+
+            <article class="pub-item">
+              <div class="pub-meta">
+                <span class="pub-journal">Frontiers in Bioengineering &amp; Biotechnology</span>
+                <span class="pub-year">2022</span>
+                <span class="pub-type pub-type-primary">First Author</span>
+              </div>
+              <h3 class="pub-title">Raloxifene Stimulates Estrogen Signaling to Protect Against Age- and Sex-Related Intervertebral Disc Degeneration in Mice</h3>
+              <p class="pub-authors">Bhadouria N, Berman AG, Wallace JM, Holguin N.</p>
+              <p class="pub-abstract">Demonstrated that systemic raloxifene activates spinal estrogen receptor pathways, preserving disc height, matrix composition, and mechanical properties in aged male and female mice — establishing a non-surgical therapeutic rationale for bone anti-resorptives in disc disease.</p>
+              <div class="pub-tags"><span class="tag">Raloxifene</span><span class="tag">Estrogen Signaling</span><span class="tag">IVD Biomechanics</span></div>
+            </article>
+
+            <article class="pub-item">
+              <div class="pub-meta">
+                <span class="pub-journal">Frontiers in Bioengineering &amp; Biotechnology</span>
+                <span class="pub-year">2022</span>
+                <span class="pub-type">Co-Author</span>
+              </div>
+              <h3 class="pub-title">Lumbar Endplate Microfracture Injury Induces Modic-Like Changes, Intervertebral Disc Degeneration, and Spinal Cord Sensitization — An In Vivo Rat Model</h3>
+              <p class="pub-authors">Wang D, Lai A, Gansau J, Seifert AC, Munitz J, Zaheer K, <strong>Bhadouria N</strong>, Lee Y, Nasser P, Laudier DM, Holguin N, Hecht AC, Iatridis JC.</p>
+              <p class="pub-abstract">Established a clinically relevant rat model of lumbar endplate injury that replicates Modic-like changes and pain sensitization, providing a critical translational platform for studying discogenic pain initiation and central sensitization mechanisms.</p>
+              <div class="pub-tags"><span class="tag">Endplate Injury</span><span class="tag">Modic Changes</span><span class="tag">Spinal Sensitization</span></div>
+            </article>
+
+            <article class="pub-item">
+              <div class="pub-meta">
+                <span class="pub-journal">Journal of Bone and Mineral Research</span>
+                <span class="pub-year">2022</span>
+                <span class="pub-type">Co-Author</span>
+              </div>
+              <h3 class="pub-title">Suppression of Sost/Sclerostin and Dickkopf-1 Promote Intervertebral Disc Structure in Mice</h3>
+              <p class="pub-authors">Kroon T, <strong>Bhadouria N</strong>, Niziolek P, Edwards D, Clinkenbeard EL, Robling A, Holguin N.</p>
+              <p class="pub-abstract">Demonstrated that pharmacological or genetic suppression of Wnt pathway antagonists sclerostin and DKK-1 enhances IVD structural integrity, identifying the Wnt axis as a therapeutic target for disc degeneration.</p>
+              <div class="pub-tags"><span class="tag">Wnt Signaling</span><span class="tag">Sclerostin</span><span class="tag">IVD Structure</span></div>
+            </article>
+
+            <article class="pub-item">
+              <div class="pub-meta">
+                <span class="pub-journal">Canadian Metallurgical Quarterly</span>
+                <span class="pub-year">2017</span>
+                <span class="pub-type pub-type-primary">First Author</span>
+              </div>
+              <h3 class="pub-title">An Investigation of Normal and Submerged Condition on Microstructural and Tribological Properties of Friction Stir Processed AZ91-D Magnesium Alloy</h3>
+              <p class="pub-authors">Bhadouria N, Thakur L, Kumar P, Arora N.</p>
+              <p class="pub-abstract">Characterized microstructural and wear properties of friction-stir-processed magnesium nano-composites under varying processing conditions, contributing to the development of lightweight biocompatible structural materials.</p>
+              <div class="pub-tags"><span class="tag">Nano-Composites</span><span class="tag">Magnesium Alloys</span><span class="tag">Tribology</span></div>
+            </article>
+
+            <article class="pub-item">
+              <div class="pub-meta">
+                <span class="pub-journal">Transactions of the Indian Institute of Metals</span>
+                <span class="pub-year">2017</span>
+                <span class="pub-type pub-type-primary">First Author</span>
+              </div>
+              <h3 class="pub-title">A Study on Micro-Hardness and Tribological Behavior of Nano-WC–CoCr / MWCNT Reinforced AZ91D Magnesium Matrix Surface Composites</h3>
+              <p class="pub-authors">Bhadouria N, Kumar P, Thakur L, Dixit S, Arora N.</p>
+              <p class="pub-abstract">Evaluated mechanical hardness and wear resistance of novel magnesium matrix surface composites reinforced with nano-tungsten carbide and multi-walled carbon nanotubes, demonstrating significant improvement in tribological performance.</p>
+              <div class="pub-tags"><span class="tag">Nano-WC Composites</span><span class="tag">MWCNT</span><span class="tag">Wear Resistance</span></div>
+            </article>
+
           </div>
-          <h3 class="proj-title">Spine Biomechanics &amp; Nociceptive Correlation</h3>
-          <p class="proj-desc">
-            Correlating biomechanical changes in degenerated spinal segments with
-            nociceptive sensitization, establishing quantitative relationships between
-            structural failure and aberrant pain signal generation.
-          </p>
-          <div class="proj-techniques">
-            <span class="technique">Compressive Loading</span>
-            <span class="technique">Finite Element Modeling</span>
-            <span class="technique">μCT Imaging</span>
-            <span class="technique">Biomechanical Testing</span>
+          <div class="pub-scholar-cta">
+            <p>View the complete publication record, citations, and citation metrics</p>
+            <a href="https://scholar.google.com/citations?hl=en&user=K14LI8sAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Google Scholar Profile &rarr;</a>
           </div>
-          <div class="proj-bar"></div>
         </div>
 
-        <div class="project-card reveal">
-          <div class="proj-header">
-            <span class="proj-id">PRJ — 04</span>
-            <span class="proj-badge">Active</span>
+        <!-- PRESENTATIONS PANEL -->
+        <div class="sw-panel" data-panel="presentations" role="tabpanel">
+          <div class="pres-list">
+
+            <div class="pres-item pres-award">
+              <div class="pres-meta">
+                <span class="pres-year">2024</span>
+                <span class="pres-badge pres-badge-poster">Best Poster</span>
+                <span class="pres-conf">ORS Annual Meeting · Long Beach, CA</span>
+              </div>
+              <p class="pres-title">Intravenous Raloxifene Protects Against Age- and Sex-Related Intervertebral Disc Degeneration in Mice</p>
+            </div>
+
+            <div class="pres-item">
+              <div class="pres-meta">
+                <span class="pres-year">2023</span>
+                <span class="pres-badge pres-badge-service">Session Moderator</span>
+                <span class="pres-conf">ORS Spine Section Annual Meeting · Texas</span>
+              </div>
+              <p class="pres-title">Moderated Spine Degeneration &amp; Therapeutics scientific session</p>
+            </div>
+
+            <div class="pres-item">
+              <div class="pres-meta">
+                <span class="pres-year">2023</span>
+                <span class="pres-badge">Selected Cohort</span>
+                <span class="pres-conf">ASBMR Annual Meeting · San Diego, CA</span>
+              </div>
+              <p class="pres-title">ASBMR Student Cohort — translational bone-disc biology research</p>
+            </div>
+
+            <div class="pres-item pres-award">
+              <div class="pres-meta">
+                <span class="pres-year">2022</span>
+                <span class="pres-badge pres-badge-oral">Podium Finalist</span>
+                <span class="pres-conf">ORS Annual Meeting · Tampa, FL</span>
+              </div>
+              <p class="pres-title">Raloxifene Stimulates Estrogen Receptor Signaling to Preserve Disc Structure Across Sex and Age</p>
+            </div>
+
+            <div class="pres-item">
+              <div class="pres-meta">
+                <span class="pres-year">2022</span>
+                <span class="pres-badge pres-badge-service">Advocacy</span>
+                <span class="pres-conf">ASBMR Virtual Capitol Hill Day Teams</span>
+              </div>
+              <p class="pres-title">Advocated for federal bone research funding at ASBMR's Capitol Hill Day delegation</p>
+            </div>
+
+            <div class="pres-item pres-award">
+              <div class="pres-meta">
+                <span class="pres-year">2021</span>
+                <span class="pres-badge pres-badge-poster">Travel Award</span>
+                <span class="pres-conf">ASBMR Annual Meeting · Virtual</span>
+              </div>
+              <p class="pres-title">ASBMR Young Investigator Travel Award — bone-disc crosstalk and SerpinA1 biology</p>
+            </div>
+
+            <div class="pres-item pres-award">
+              <div class="pres-meta">
+                <span class="pres-year">2020</span>
+                <span class="pres-badge pres-badge-oral">Podium Finalist</span>
+                <span class="pres-conf">PSRS 6th International Spine Research Symposium</span>
+              </div>
+              <p class="pres-title">Investigating the Role of SerpinA1 in Modulating Spinal Inflammation and IVD Homeostasis</p>
+            </div>
+
+            <div class="pres-item pres-award">
+              <div class="pres-meta">
+                <span class="pres-year">2020</span>
+                <span class="pres-badge pres-badge-service">Travel Fellowship</span>
+                <span class="pres-conf">ORS Spine Section Annual Meeting</span>
+              </div>
+              <p class="pres-title">ORS Spine Section Travel Fellowship Award — emerging investigator presentation</p>
+            </div>
+
+            <div class="pres-item pres-award">
+              <div class="pres-meta">
+                <span class="pres-year">2019</span>
+                <span class="pres-badge pres-badge-poster">Best Poster</span>
+                <span class="pres-conf">ORS Annual Meeting · Austin, TX</span>
+              </div>
+              <p class="pres-title">Alpha-1 Antitrypsin (SerpinA1) Deletion Impairs Macrophage Recruitment and Alters Bone Homeostasis in the Spinal Column</p>
+            </div>
+
+            <div class="pres-item pres-award">
+              <div class="pres-meta">
+                <span class="pres-year">2017</span>
+                <span class="pres-badge pres-badge-poster">Best Poster</span>
+                <span class="pres-conf">IMME Conference · NIT Trichy, India</span>
+              </div>
+              <p class="pres-title">Microstructural and Tribological Properties of Nano-WC–CoCr Reinforced AZ91D Magnesium Matrix Surface Composites</p>
+            </div>
+
           </div>
-          <h3 class="proj-title">Imaging-Driven Neural Mapping of the Disc</h3>
-          <p class="proj-desc">
-            Applying multiphoton microscopy and 3D tissue clearing to map sensory nerve
-            distributions in degenerated disc tissue and correlate spatial innervation
-            patterns with behavioral pain phenotypes in vivo.
-          </p>
-          <div class="proj-techniques">
-            <span class="technique">iDISCO+ Clearing</span>
-            <span class="technique">Light Sheet Microscopy</span>
-            <span class="technique">3D Neural Reconstruction</span>
-            <span class="technique">CGRP / SP Mapping</span>
-          </div>
-          <div class="proj-bar"></div>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ─── PUBLICATIONS ─────────────────────────────────────────── -->
-  <section id="publications" class="section section-alt">
-    <div class="container">
-      <header class="section-header reveal">
-        <span class="section-eyebrow">Scholarly Output</span>
-        <h2 class="section-title">Selected Publications &amp; Presentations</h2>
-        <p class="section-sub">Peer-reviewed contributions advancing translational spine science</p>
-      </header>
-
-      <div class="pubs-list">
-
-        <article class="pub-item reveal">
-          <div class="pub-meta">
-            <span class="pub-journal">Journal of Orthopaedic Research</span>
-            <span class="pub-year">2024</span>
-          </div>
-          <h3 class="pub-title">
-            TRPV1 Expression in Degenerated Intervertebral Disc Correlates with
-            Sensory Nerve Ingrowth and Behavioral Pain Outcomes in a Rodent Model
-          </h3>
-          <p class="pub-authors">Bhadouria N, et al.</p>
-          <p class="pub-abstract">
-            Demonstrated differential TRPV1 upregulation in degenerated IVD tissue
-            correlating with aberrant nociceptive innervation and mechanical allodynia
-            across a time-course degeneration model.
-          </p>
-          <div class="pub-tags">
-            <span class="tag">TRPV1</span>
-            <span class="tag">IVD Degeneration</span>
-            <span class="tag">Nociception</span>
-          </div>
-        </article>
-
-        <article class="pub-item reveal">
-          <div class="pub-meta">
-            <span class="pub-journal">Spine</span>
-            <span class="pub-year">2023</span>
-          </div>
-          <h3 class="pub-title">
-            Bidirectional Crosstalk Between Nucleus Pulposus Cells and Dorsal Root
-            Ganglion Neurons Mediates Pain Sensitization in Discogenic Pain
-          </h3>
-          <p class="pub-authors">Bhadouria N, et al.</p>
-          <p class="pub-abstract">
-            Established an in vitro co-culture model revealing inflammatory
-            cytokine-mediated sensitization of DRG neurons by degenerated
-            disc-conditioned media, identifying IL-6 and TNF-α as key mediators.
-          </p>
-          <div class="pub-tags">
-            <span class="tag">Disc–Nerve Crosstalk</span>
-            <span class="tag">DRG Neurons</span>
-            <span class="tag">Cytokines</span>
-          </div>
-        </article>
-
-        <article class="pub-item reveal">
-          <div class="pub-meta">
-            <span class="pub-journal">ORS Annual Meeting — Podium Presentation</span>
-            <span class="pub-year">2024</span>
-          </div>
-          <h3 class="pub-title">
-            3D Neural Mapping of Sensory Nerve Distribution in Lumbar Intervertebral
-            Discs Using iDISCO+ and Light Sheet Microscopy
-          </h3>
-          <p class="pub-authors">Bhadouria N, et al.</p>
-          <p class="pub-abstract">
-            First comprehensive 3D atlas of sensory nerve territories in healthy versus
-            degenerated lumbar discs using whole-tissue optical clearing, revealing
-            preferential innervation of the outer annulus fibrosus and endplate.
-          </p>
-          <div class="pub-tags">
-            <span class="tag">Neural Mapping</span>
-            <span class="tag">iDISCO+</span>
-            <span class="tag">ORS 2024</span>
-          </div>
-        </article>
-
-        <article class="pub-item reveal">
-          <div class="pub-meta">
-            <span class="pub-journal">Osteoarthritis &amp; Cartilage</span>
-            <span class="pub-year">2022</span>
-          </div>
-          <h3 class="pub-title">
-            Mechanosensitive Pathways in Nucleus Pulposus: Compressive Load-Induced
-            Pro-Inflammatory Cascades and Implications for Degeneration
-          </h3>
-          <p class="pub-authors">Bhadouria N, et al.</p>
-          <p class="pub-abstract">
-            Characterized biomechanical load-sensitive gene expression profiles in
-            nucleus pulposus cells, linking mechanical overload to NF-κB activation
-            and downstream catabolic enzyme upregulation.
-          </p>
-          <div class="pub-tags">
-            <span class="tag">Mechanobiology</span>
-            <span class="tag">Nucleus Pulposus</span>
-            <span class="tag">NF-κB</span>
-          </div>
-        </article>
-
-        <article class="pub-item reveal">
-          <div class="pub-meta">
-            <span class="pub-journal">ASBMR Annual Meeting — Poster Presentation</span>
-            <span class="pub-year">2023</span>
-          </div>
-          <h3 class="pub-title">
-            Osteogenic and Neurogenic Crosstalk at the Vertebral Endplate:
-            A Novel Axis in Discogenic Pain Pathogenesis
-          </h3>
-          <p class="pub-authors">Bhadouria N, et al.</p>
-          <p class="pub-abstract">
-            Identified the vertebral endplate as a critical interface for bone–disc–nerve
-            crosstalk, with osteoclast-derived RANKL implicated in sensory neuron
-            sensitization and pain amplification.
-          </p>
-          <div class="pub-tags">
-            <span class="tag">Vertebral Endplate</span>
-            <span class="tag">Bone–Disc Interface</span>
-            <span class="tag">ASBMR</span>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── SCIENTIFIC JOURNEY / TIMELINE ───────────────────────── -->
-  <section id="timeline" class="section">
+  <!-- ─── SCIENTIFIC JOURNEY ──────────────────────────────────── -->
+  <section id="journey" class="section">
     <div class="container">
       <header class="section-header reveal">
         <span class="section-eyebrow">Scientific Journey</span>
@@ -531,92 +659,87 @@
         </p>
       </header>
 
-      <div class="timeline">
+      <div class="tl-h-wrapper reveal">
+        <div class="tl-h-track">
 
-        <div class="tl-item tl-left reveal">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <span class="tl-year">2014 – 2018</span>
-            <h3 class="tl-title">Undergraduate Foundation</h3>
-            <p class="tl-desc">
-              Bachelor's degree in Life Sciences, India. Early immersion in cell biology,
-              physiology, and biomedical research cultivated a deep commitment to
-              understanding the mechanisms of human disease.
-            </p>
-            <span class="tl-loc">India</span>
+          <div class="tl-h-stop">
+            <div class="tl-h-dot"></div>
+            <div class="tl-h-card">
+              <span class="tl-h-eyebrow">Bachelor's</span>
+              <h3 class="tl-h-title">Engineering with Honours</h3>
+              <p class="tl-h-desc">Mechanical Engineering graduate; 2nd prize at national technical fest Technovation. Foundation for a career bridging materials science and biomedicine.</p>
+              <span class="tl-h-loc">IERT Allahabad, India</span>
+            </div>
+            <span class="tl-h-year">2013</span>
           </div>
-        </div>
 
-        <div class="tl-item tl-right reveal">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <span class="tl-year">2018 – 2020</span>
-            <h3 class="tl-title">Master's Research in Musculoskeletal Biology</h3>
-            <p class="tl-desc">
-              Graduate training in musculoskeletal biology and biomechanics. First
-              introduction to spine research and intervertebral disc biology through
-              supervised experimental investigations.
-            </p>
-            <span class="tl-loc">India</span>
+          <div class="tl-h-stop">
+            <div class="tl-h-dot"></div>
+            <div class="tl-h-card">
+              <span class="tl-h-eyebrow">Master's · Gov't Fellowship</span>
+              <h3 class="tl-h-title">Best Student, MS Degree</h3>
+              <p class="tl-h-desc">MS in Mechanical Engineering on a competitive Government of India Fellowship. Teaching Assistant; supervised Bachelor's thesis on Mg composites. Graduated top of class.</p>
+              <span class="tl-h-loc">NIT Kurukshetra, India</span>
+            </div>
+            <span class="tl-h-year">2014 – 2016</span>
           </div>
-        </div>
 
-        <div class="tl-item tl-left reveal">
-          <div class="tl-dot tl-dot-bright"></div>
-          <div class="tl-content">
-            <span class="tl-year">2020 – Present</span>
-            <h3 class="tl-title">Doctoral Research — USA</h3>
-            <p class="tl-desc">
-              PhD in orthopaedic and spine research at a leading U.S. academic medical
-              center. Pioneering work on TRPV1 nociception, neural mapping, spinal tissue
-              crosstalk, and non-opioid therapeutic targets in disc degeneration.
-            </p>
-            <span class="tl-loc">United States</span>
+          <div class="tl-h-stop">
+            <div class="tl-h-dot"></div>
+            <div class="tl-h-card">
+              <span class="tl-h-eyebrow">Faculty · Research Fellow</span>
+              <h3 class="tl-h-title">Assistant Professor &amp; IIT-Delhi Fellow</h3>
+              <p class="tl-h-desc">Taught Fluid Mechanics, Heat Transfer, Energy. Managed Materials Science Lab; served on NBA accreditation. IIT-Delhi Summer Research Fellow; Best Poster IMME 2017.</p>
+              <span class="tl-h-loc">Inderprastha Engineering College &amp; IIT-Delhi</span>
+            </div>
+            <span class="tl-h-year">2016 – 2018</span>
           </div>
-        </div>
 
-        <div class="tl-item tl-right reveal">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <span class="tl-year">2022</span>
-            <h3 class="tl-title">ORS Spine Section — Emerging Investigator</h3>
-            <p class="tl-desc">
-              Active engagement with the Orthopaedic Research Society Spine Section,
-              presenting research and building collaborative networks with leading
-              orthopaedic scientists worldwide.
-            </p>
-            <span class="tl-loc">Orthopaedic Research Society</span>
+          <div class="tl-h-stop tl-h-pivot">
+            <div class="tl-h-dot tl-h-dot-bright"></div>
+            <div class="tl-h-card">
+              <span class="tl-h-eyebrow">PhD Research · Career Pivot</span>
+              <h3 class="tl-h-title">Research Assistant — Spine Biology</h3>
+              <p class="tl-h-desc">Pivoted to spine biology. Joined Dr. Holguin's lab; co-mentored by Dr. Buganza Tepole (Purdue). ORS Best Poster 2019, ORS Spine Travel Fellowship 2020, ASBMR Young Investigator Award 2021.</p>
+              <span class="tl-h-loc">IUPUI, Indianapolis, USA</span>
+            </div>
+            <span class="tl-h-year">2018 – 2022</span>
           </div>
-        </div>
 
-        <div class="tl-item tl-left reveal">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <span class="tl-year">2023 – 2024</span>
-            <h3 class="tl-title">ASBMR &amp; International Recognition</h3>
-            <p class="tl-desc">
-              Recognized at the American Society for Bone and Mineral Research annual
-              meeting; competitive international travel awards supporting presentations
-              at global orthopaedic and musculoskeletal biology conferences.
-            </p>
-            <span class="tl-loc">ASBMR / International</span>
+          <div class="tl-h-stop">
+            <div class="tl-h-dot"></div>
+            <div class="tl-h-card">
+              <span class="tl-h-eyebrow">Postdoctoral Fellow</span>
+              <h3 class="tl-h-title">ISMMS — Intern → Postdoc</h3>
+              <p class="tl-h-desc">Joined ISMMS Orthopaedics July 2022; promoted to Postdoc March 2024. ORS Innovation Committee 2023–25; Session Moderator ORS Texas; ASBMR Student Cohort; ORS Best Poster 2024.</p>
+              <span class="tl-h-loc">Icahn School of Medicine at Mount Sinai, NY</span>
+            </div>
+            <span class="tl-h-year">2022 – 2024</span>
           </div>
-        </div>
 
-        <div class="tl-item tl-right reveal">
-          <div class="tl-dot tl-dot-future"></div>
-          <div class="tl-content">
-            <span class="tl-year">Horizon</span>
-            <h3 class="tl-title">Independent Academic Leadership</h3>
-            <p class="tl-desc">
-              Building toward an independent research program at the frontier of
-              translational spine science — a laboratory dedicated to mechanism-based
-              non-opioid therapies and global mentorship in spine health research.
-            </p>
-            <span class="tl-loc">The Road Ahead</span>
+          <div class="tl-h-stop">
+            <div class="tl-h-dot tl-h-dot-bright"></div>
+            <div class="tl-h-card">
+              <span class="tl-h-eyebrow">Current Position</span>
+              <h3 class="tl-h-title">Postdoctoral Fellow &amp; Scientific Leader</h3>
+              <p class="tl-h-desc">Advancing raloxifene IV therapy, SERPINA1 sex-dependent biology, and endplate injury models. Organizing ORS Innovation Track; delivering invited lectures; mentoring 11 trainees globally.</p>
+              <span class="tl-h-loc">Icahn School of Medicine at Mount Sinai, NY</span>
+            </div>
+            <span class="tl-h-year">2024 – Present</span>
           </div>
-        </div>
 
+          <div class="tl-h-stop tl-h-horizon">
+            <div class="tl-h-dot tl-h-dot-future"></div>
+            <div class="tl-h-card">
+              <span class="tl-h-eyebrow">Next Chapter</span>
+              <h3 class="tl-h-title">Independent Research Lab</h3>
+              <p class="tl-h-desc">Building toward faculty appointment — independent program at the frontier of translational spine science, mechanism-based non-opioid therapies, and a global mentorship ecosystem.</p>
+              <span class="tl-h-loc">The Road Ahead</span>
+            </div>
+            <span class="tl-h-year">Horizon</span>
+          </div>
+
+        </div>
       </div>
     </div>
   </section>
@@ -629,50 +752,82 @@
         <h2 class="section-title">Leadership &amp; Awards</h2>
       </header>
 
-      <div class="leadership-grid">
+      <div class="accordion reveal">
 
-        <div class="lc-card reveal">
-          <div class="lc-badge badge-ors">ORS</div>
-          <h3 class="lc-title">ORS Spine Section</h3>
-          <span class="lc-role">Active Member &amp; Presenter</span>
-          <p class="lc-desc">
-            Contributing to the advancement of orthopaedic spine research through
-            scientific exchange, collaborative initiatives, and emerging investigator
-            networks within the Orthopaedic Research Society.
-          </p>
+        <div class="acc-item">
+          <button class="acc-trigger" aria-expanded="true">
+            <div class="acc-badge-wrap"><div class="lc-badge badge-ors">ORS</div></div>
+            <span class="acc-title">Orthopaedic Research Society — Awards</span>
+            <span class="acc-meta">Multiple Years</span>
+            <span class="acc-chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="acc-body" aria-hidden="false">
+            <div class="acc-body-inner">
+              <p class="lc-desc">
+                <strong class="award-year">2024</strong> Best Poster Award, ORS Annual Meeting, Long Beach ·
+                <strong class="award-year">2022</strong> Finalist, Podium Presentation Award, ORS Annual Meeting ·
+                <strong class="award-year">2020</strong> ORS Spine Section Travel Fellowship Award ·
+                <strong class="award-year">2019</strong> Best Poster Award, ORS Annual Meeting, USA
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div class="lc-card reveal">
-          <div class="lc-badge badge-asbmr">ASBMR</div>
-          <h3 class="lc-title">American Society for Bone &amp; Mineral Research</h3>
-          <span class="lc-role">Member &amp; Presenter</span>
-          <p class="lc-desc">
-            Contributing translational insights at the intersection of bone biology
-            and discogenic pain, presenting work on vertebral endplate crosstalk
-            and its role in sensory nerve sensitization.
-          </p>
+        <div class="acc-item">
+          <button class="acc-trigger" aria-expanded="false">
+            <div class="acc-badge-wrap"><div class="lc-badge badge-asbmr">ASBMR</div></div>
+            <span class="acc-title">ASBMR &amp; Federal Engagement</span>
+            <span class="acc-meta">2021 · 2022 · 2023</span>
+            <span class="acc-chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="acc-body" aria-hidden="true">
+            <div class="acc-body-inner">
+              <p class="lc-desc">
+                <strong class="award-year">2023</strong> Selected to ASBMR Student Cohort, Annual Meeting, San Diego ·
+                <strong class="award-year">2022</strong> Selected for ASBMR Virtual Capitol Hill Day Teams, advocating for bone research funding ·
+                <strong class="award-year">2021</strong> ASBMR Young Investigator Travel Award
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div class="lc-card reveal">
-          <div class="lc-badge badge-award">✦</div>
-          <h3 class="lc-title">Research Excellence Award</h3>
-          <span class="lc-role">Graduate Division — Doctoral Research</span>
-          <p class="lc-desc">
-            Recognized for outstanding contributions in translational spine science,
-            demonstrating exceptional scientific rigor, innovation, and meaningful
-            impact in the mechanistic study of discogenic pain.
-          </p>
+        <div class="acc-item">
+          <button class="acc-trigger" aria-expanded="false">
+            <div class="acc-badge-wrap"><div class="lc-badge badge-award">⚙</div></div>
+            <span class="acc-title">ORS Innovation &amp; Scientific Service</span>
+            <span class="acc-meta">2022 – 2025</span>
+            <span class="acc-chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="acc-body" aria-hidden="true">
+            <div class="acc-body-inner">
+              <p class="lc-desc">
+                <strong class="award-year">2023–2025</strong> ORS Innovation Committee Member ·
+                <strong class="award-year">2023</strong> Session Moderator, ORS Spine Section, Annual Meeting, Texas ·
+                <strong class="award-year">2024</strong> Organizer, "Thinking Outside the Box: Innovative Solutions to Unmet Clinical Needs in Spine," ORS Innovation Track, Los Angeles ·
+                <strong class="award-year">2022</strong> ORS Innovation Network Committee Volunteer
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div class="lc-card reveal">
-          <div class="lc-badge badge-travel">✈</div>
-          <h3 class="lc-title">International Travel Awards</h3>
-          <span class="lc-role">Multiple Consecutive Years</span>
-          <p class="lc-desc">
-            Competitively awarded travel grants enabling presentation of research at
-            international orthopaedic and musculoskeletal biology conferences,
-            fostering global scientific dialogue and collaboration.
-          </p>
+        <div class="acc-item">
+          <button class="acc-trigger" aria-expanded="false">
+            <div class="acc-badge-wrap"><div class="lc-badge badge-travel">✦</div></div>
+            <span class="acc-title">Academic Excellence &amp; Early Honors</span>
+            <span class="acc-meta">India → USA</span>
+            <span class="acc-chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="acc-body" aria-hidden="true">
+            <div class="acc-body-inner">
+              <p class="lc-desc">
+                <strong class="award-year">2020</strong> Finalist, Podium Presentation, PSRS 6th International Spine Research Symposium ·
+                <strong class="award-year">2017</strong> Best Poster, IMME Conference, NIT Trichy ·
+                <strong class="award-year">2017</strong> Summer Research Faculty Fellow, IIT-Delhi ·
+                <strong class="award-year">2016</strong> Best Student Award, Master's Degree ·
+                <strong class="award-year">2014–16</strong> Government of India Student Fellowship
+              </p>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -695,57 +850,192 @@
             discoveries made today, but on the researchers we cultivate for tomorrow."
           </p>
           <p class="mentorship-body">
-            Dr. Bhadouria actively mentors undergraduate and graduate researchers,
-            providing hands-on training in spine biology, preclinical research techniques,
-            and scientific communication. Her mentorship extends beyond the laboratory —
-            guiding students through the broader scientific journey with cultural awareness
-            and sensitivity to the challenges facing international researchers in STEM.
+            Dr. Bhadouria actively mentors medical students, senior undergraduates, and
+            postbaccalaureate researchers across the United States, Europe, and Asia —
+            providing hands-on training in spine biology, biomechanics, and scientific
+            communication. Her mentorship extends beyond the laboratory, guiding trainees
+            through competitive admissions, research fellowships, and their first
+            peer-reviewed contributions.
           </p>
           <div class="m-stats">
             <div class="m-stat">
-              <span class="m-num">20+</span>
-              <span class="m-lbl">Students Mentored</span>
+              <span class="m-num">11+</span>
+              <span class="m-lbl">Trainees Mentored</span>
             </div>
             <div class="m-stat">
-              <span class="m-num">3</span>
-              <span class="m-lbl">Levels: UG / MS / PhD</span>
+              <span class="m-num">6</span>
+              <span class="m-lbl">Institutions</span>
             </div>
             <div class="m-stat">
-              <span class="m-num">∞</span>
-              <span class="m-lbl">Possibilities Opened</span>
+              <span class="m-num">4</span>
+              <span class="m-lbl">Countries</span>
+            </div>
+          </div>
+          <div class="mentorship-domains">
+            <p class="md-label">Mentoring researchers in</p>
+            <div class="md-chips">
+              <span class="md-chip">Spine Biology</span>
+              <span class="md-chip">Biomechanics</span>
+              <span class="md-chip">Bone Biology</span>
+              <span class="md-chip">Regenerative Medicine</span>
+              <span class="md-chip">Scientific Writing</span>
+              <span class="md-chip">Grant Applications</span>
+              <span class="md-chip">Career Navigation</span>
+              <span class="md-chip">International STEM</span>
             </div>
           </div>
         </div>
 
         <div class="mentorship-right reveal">
-          <h3 class="mentorship-areas-title">Areas of Mentorship</h3>
-          <ul class="area-list">
-            <li class="area-item">
-              <span class="area-dot"></span>
-              Spine biology and orthopaedic research techniques
+          <h3 class="mentorship-areas-title">Current &amp; Recent Trainees</h3>
+          <div class="mentee-table">
+            <div class="mentee-row">
+              <div class="mentee-name">Jonathan Huang</div>
+              <div class="mentee-info">Medical Student · ISMMS · June 2024–</div>
+            </div>
+            <div class="mentee-row">
+              <div class="mentee-name">Kaljang Sherpa</div>
+              <div class="mentee-info">Postbaccalaureate · NIH Skeletal Genomics · Jun–Aug 2025</div>
+            </div>
+            <div class="mentee-row">
+              <div class="mentee-name">Anish Easwaran</div>
+              <div class="mentee-info">Medical Student · ISMMS · June 2024–</div>
+            </div>
+            <div class="mentee-row">
+              <div class="mentee-name">Charu Jain</div>
+              <div class="mentee-info">Medical Student · ISMMS · June 2024–</div>
+            </div>
+            <div class="mentee-row">
+              <div class="mentee-name">Angelica Baburova</div>
+              <div class="mentee-info">Senior · Cooper Union, NY · May 2024–</div>
+            </div>
+            <div class="mentee-row">
+              <div class="mentee-name">Antonia Demopoulos</div>
+              <div class="mentee-info">Medical Student · Aristotle Univ., Greece · Jul–Sep 2024</div>
+            </div>
+            <div class="mentee-row">
+              <div class="mentee-name">Helen Lin</div>
+              <div class="mentee-info">High School · Bronx High School of Science · Jan–Jul 2024</div>
+            </div>
+            <div class="mentee-row">
+              <div class="mentee-name">Michael Lemonick</div>
+              <div class="mentee-info">Medical Student · ISMMS · Jun 2023–Jul 2024</div>
+            </div>
+            <div class="mentee-row">
+              <div class="mentee-name">James Manolis</div>
+              <div class="mentee-info">Senior · Cornell University · May–Jul 2023</div>
+            </div>
+            <div class="mentee-row">
+              <div class="mentee-name">Amelia Franchin</div>
+              <div class="mentee-info">Medical Student · Univ. of Navarra, Spain · May–Jul 2023</div>
+            </div>
+          </div>
+
+          <div class="mentee-outcomes">
+            <h4 class="outcomes-title">Notable Outcomes</h4>
+            <div class="outcome-item">
+              <span class="outcome-icon">→</span>
+              <span>James Manolis — admitted to MTM program (Berkeley / UCSF), 2024</span>
+            </div>
+            <div class="outcome-item">
+              <span class="outcome-icon">→</span>
+              <span>Kirtivardhan Singh — PhD in Mechanical Engineering, Johns Hopkins University, 2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── COMMUNITY ───────────────────────────────────────────── -->
+  <section id="community" class="section">
+    <div class="container">
+      <header class="section-header reveal">
+        <span class="section-label">Beyond the Bench</span>
+        <h2 class="section-title">Community &amp; Outreach</h2>
+        <p class="section-sub">
+          Science grows when it is shared — through invited talks, open media, and editorial service.
+        </p>
+      </header>
+
+      <div class="community-grid">
+
+        <div class="community-block reveal">
+          <h3 class="community-block-title">Invited Talks</h3>
+          <div class="talk-list">
+            <div class="talk-item">
+              <span class="talk-year">2024</span>
+              <div class="talk-body">
+                <strong>Bone Biology Course Lecture</strong>
+                <p>Invited lecturer for the Indiana University School of Medicine graduate course on bone biology and musculoskeletal therapeutics.</p>
+              </div>
+            </div>
+            <div class="talk-item">
+              <span class="talk-year">2022</span>
+              <div class="talk-body">
+                <strong>IUPUI International Festival Panelist</strong>
+                <p>"Global experience in science" — sharing the journey of navigating new disciplines and cross-continental research culture with an international academic community.</p>
+              </div>
+            </div>
+            <div class="talk-item">
+              <span class="talk-year">2021</span>
+              <div class="talk-body">
+                <strong>Global Voices IUPUI — Speaker</strong>
+                <p>"Health challenges around the world" — as the first founding member of Global Voices, IUPUI, discussing health equity and the global burden of spine disease.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="community-block reveal">
+          <h3 class="community-block-title">Media &amp; Features</h3>
+          <div class="media-list">
+            <a class="media-item" href="https://blogs.iu.edu/grademissaries/2023/03/16/navigating-a-new-field-of-study/" target="_blank" rel="noopener noreferrer">
+              <span class="media-source">IU Emissary Blog</span>
+              <span class="media-title">"Navigating a New Field of Study"</span>
+              <span class="media-year">2023</span>
+            </a>
+            <a class="media-item" href="https://www.huble.org/author/neharika-bhadouria/" target="_blank" rel="noopener noreferrer">
+              <span class="media-source">Hubble Interview</span>
+              <span class="media-title">Featured author profile on science communication and career</span>
+              <span class="media-year">2022</span>
+            </a>
+            <a class="media-item" href="https://www.ors.org/research-section-newsletters/" target="_blank" rel="noopener noreferrer">
+              <span class="media-source">ORS Spine Column Newsletter</span>
+              <span class="media-title">Featured research article — Spine Section Newsletter</span>
+              <span class="media-year">2021 · 2023</span>
+            </a>
+            <div class="media-item media-no-link">
+              <span class="media-source">ORS Member Spotlight</span>
+              <span class="media-title">"An early-career researcher at the crossroads of bone and disc biology"</span>
+              <span class="media-year">2021</span>
+            </div>
+            <div class="media-item media-no-link">
+              <span class="media-source">ORS Connect</span>
+              <span class="media-title">"Lungs and Bone Connected? Alpha-1 Antitrypsin in Disc Biology"</span>
+              <span class="media-year">2021</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="community-block reveal">
+          <h3 class="community-block-title">Editorial Service</h3>
+          <ul class="editorial-list">
+            <li>
+              <span class="editorial-role">Peer Reviewer</span>
+              <span class="editorial-journal">ASME Journal of Tribology</span>
             </li>
-            <li class="area-item">
-              <span class="area-dot"></span>
-              Scientific writing and manuscript preparation
+            <li>
+              <span class="editorial-role">Peer Reviewer</span>
+              <span class="editorial-journal">International Journal of Biomedical Engineering and Clinical Science</span>
             </li>
-            <li class="area-item">
-              <span class="area-dot"></span>
-              Grant writing and research proposal development
-            </li>
-            <li class="area-item">
-              <span class="area-dot"></span>
-              Conference presentation and scientific communication
-            </li>
-            <li class="area-item">
-              <span class="area-dot"></span>
-              Career navigation for international STEM researchers
-            </li>
-            <li class="area-item">
-              <span class="area-dot"></span>
-              Building toward independent academic leadership
+            <li>
+              <span class="editorial-role">Peer Reviewer</span>
+              <span class="editorial-journal">Clinical Reviews in Bone and Mineral Metabolism</span>
             </li>
           </ul>
         </div>
+
       </div>
     </div>
   </section>
@@ -807,19 +1097,20 @@
           <span class="footer-monogram">N·B</span>
           <div class="footer-brand-text">
             <div class="footer-name">Dr. Neharika Bhadouria</div>
-            <div class="footer-role">Translational Spine Scientist</div>
+            <div class="footer-role">Postdoctoral Fellow · Icahn School of Medicine at Mount Sinai</div>
           </div>
         </div>
         <nav class="footer-nav">
           <a href="#research">Research</a>
-          <a href="#projects">Projects</a>
-          <a href="#publications">Publications</a>
-          <a href="#timeline">Journey</a>
+          <a href="#scientific-work">Work</a>
+          <a href="#journey">Journey</a>
           <a href="#leadership">Leadership</a>
+          <a href="#mentorship">Mentorship</a>
+          <a href="#community">Community</a>
           <a href="#collaborate">Collaborate</a>
         </nav>
         <div class="footer-social">
-          <a href="#" class="social-link" aria-label="Google Scholar">Scholar</a>
+          <a href="https://scholar.google.com/citations?hl=en&user=K14LI8sAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Google Scholar">Scholar</a>
           <a href="#" class="social-link" aria-label="ORCID">ORCID</a>
           <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
           <a href="#" class="social-link" aria-label="ResearchGate">ResearchGate</a>
@@ -827,7 +1118,7 @@
       </div>
       <div class="footer-bottom">
         <span>&copy; 2025 Dr. Neharika Bhadouria. All rights reserved.</span>
-        <span class="footer-keywords">Translational Spine Science · Non-Opioid Therapeutics · Discogenic Pain</span>
+        <span class="footer-keywords">Translational Spine Science · SerpinA1 · Raloxifene · IVD Degeneration · Mount Sinai</span>
       </div>
     </div>
   </footer>

@@ -513,6 +513,112 @@ function initCtaCanvas() {
   });
 }
 
+/* ─── FLOAT NAV ─────────────────────────────────────────────── */
+class FloatNav {
+  constructor() {
+    this.nav = document.getElementById('float-nav');
+    if (!this.nav) return;
+    this.dots = this.nav.querySelectorAll('.fn-dot');
+    this.sections = Array.from(document.querySelectorAll('section[id]'));
+    window.addEventListener('scroll', () => this._update(), { passive: true });
+    this._update();
+  }
+  _update() {
+    const y = window.scrollY + window.innerHeight * 0.4;
+    let current = '';
+    this.sections.forEach(s => { if (s.offsetTop <= y) current = s.id; });
+    this.dots.forEach(d => {
+      const matches = d.getAttribute('href') === '#' + current;
+      d.classList.toggle('active', matches);
+    });
+  }
+}
+
+/* ─── RESEARCH CARD EXPAND ───────────────────────────────────── */
+class ResearchExpand {
+  constructor() {
+    document.querySelectorAll('.rc-expand-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.research-card');
+        const detail = card.querySelector('.rc-detail');
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        btn.querySelector('.rc-expand-label').textContent = expanded ? 'Explore' : 'Close';
+        detail.classList.toggle('open', !expanded);
+        card.classList.toggle('expanded', !expanded);
+      });
+    });
+  }
+}
+
+/* ─── TAB SYSTEM ─────────────────────────────────────────────── */
+class TabSystem {
+  constructor() {
+    document.querySelectorAll('.sw-tab-bar').forEach(bar => {
+      const container = bar.closest('.sw-tabs');
+      bar.querySelectorAll('.sw-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+          const name = tab.dataset.tab;
+          bar.querySelectorAll('.sw-tab').forEach(t => {
+            t.classList.toggle('active', t === tab);
+            t.setAttribute('aria-selected', String(t === tab));
+          });
+          container.querySelectorAll('.sw-panel').forEach(p => {
+            const active = p.dataset.panel === name;
+            p.classList.toggle('active', active);
+            if (active) {
+              p.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+              p.querySelectorAll('.project-card').forEach(c => c.classList.add('visible'));
+            }
+          });
+        });
+      });
+    });
+    // Activate reveals in initially-active panels
+    document.querySelectorAll('.sw-panel.active').forEach(p => {
+      p.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+      p.querySelectorAll('.project-card').forEach(c => c.classList.add('visible'));
+    });
+  }
+}
+
+/* ─── ACCORDION ──────────────────────────────────────────────── */
+class AccordionSystem {
+  constructor() {
+    document.querySelectorAll('.acc-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const item = trigger.closest('.acc-item');
+        const body = item.querySelector('.acc-body');
+        const expanded = trigger.getAttribute('aria-expanded') === 'true';
+        trigger.setAttribute('aria-expanded', String(!expanded));
+        body.setAttribute('aria-hidden', String(expanded));
+      });
+    });
+  }
+}
+
+/* ─── HORIZONTAL TIMELINE DRAG SCROLL ───────────────────────── */
+class HorizontalTimelineDrag {
+  constructor() {
+    const wrapper = document.querySelector('.tl-h-wrapper');
+    if (!wrapper) return;
+    let isDown = false, startX = 0, scrollLeft = 0;
+    wrapper.addEventListener('mousedown', e => {
+      isDown = true;
+      startX = e.pageX - wrapper.offsetLeft;
+      scrollLeft = wrapper.scrollLeft;
+    });
+    window.addEventListener('mouseup', () => { isDown = false; });
+    wrapper.addEventListener('mouseleave', () => { isDown = false; });
+    wrapper.addEventListener('mousemove', e => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - wrapper.offsetLeft;
+      wrapper.scrollLeft = scrollLeft - (x - startX) * 1.2;
+    });
+  }
+}
+
 /* ─── INIT ───────────────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   initLoader();
@@ -540,4 +646,9 @@ document.addEventListener('DOMContentLoaded', () => {
   new HeroParallax();
   new ProjectBars();
   new TimelineDots();
+  new FloatNav();
+  new ResearchExpand();
+  new TabSystem();
+  new AccordionSystem();
+  new HorizontalTimelineDrag();
 });
