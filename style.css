@@ -423,8 +423,8 @@ body {
   animation: fadeInUp .8s .2s forwards;
 }
 .hero-portrait-img {
-  width: 250px;
-  height: 250px;
+  width: 165px;
+  height: 165px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
