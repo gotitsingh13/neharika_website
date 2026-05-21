@@ -239,6 +239,8 @@ body {
 .nav-cta:hover { background: rgba(201,168,76,.1); border-color: var(--gold); }
 .nav-cta::after { display: none; }
 
+.nav-close { display: none; }
+
 .nav-toggle {
   display: none;
   flex-direction: column;
