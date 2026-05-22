@@ -1,5 +1,5 @@
 /* ====================================================================
-   DR. NEHARIKA BHADOURIA — WEBSITE INTERACTIONS
+   NEHARIKA BHADOURIA, PhD — WEBSITE INTERACTIONS
    Neural canvas, scroll animations, counters, cursor, nav
    ==================================================================== */
 
